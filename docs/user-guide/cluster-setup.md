@@ -1,6 +1,6 @@
 # Kubernetes Cluster Setup
 
-Before deploying Akri, you must have a Kubernetes cluster (v1.16 or higher) running with `kubectl` and `Helm` installed. Akri is Kubernetes native, so it should run on most Kubernetes distributions. This document provides cluster setup instructions for the three Kubernetes distributions that all of our end-to-end tests run on.
+Before deploying Akri, you must have a Kubernetes cluster (v1.33 or higher) running with `kubectl` and `Helm` installed. Akri is Kubernetes native, so it should run on most Kubernetes distributions. This document provides cluster setup instructions for the three Kubernetes distributions that all of our end-to-end tests run on.
 
 {% hint style="info" %}
 Note: All nodes must be Linux on amd64, arm64v8, or arm32v7.
