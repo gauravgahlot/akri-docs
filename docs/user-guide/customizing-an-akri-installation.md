@@ -51,7 +51,7 @@ The following sections explain some of the ways the configuration.yaml could be 
 
 #### Modifying the brokerPodSpec
 
-The `brokerPodSpec` property is a full [PodSpec](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#podspec-v1-core) and can be modified as such. For example, to allow the master Node to have a protocol broker Pod scheduled to it, modify the Configuration, ONVIF in this case, like so:
+The `brokerPodSpec` property is a full [PodSpec](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.33/#podspec-v1-core) and can be modified as such. For example, to allow the master Node to have a protocol broker Pod scheduled to it, modify the Configuration, ONVIF in this case, like so:
 
 ```yaml
 spec:
@@ -69,11 +69,11 @@ spec:
 
 #### Modifying the brokerJobSpec
 
-The `brokerJobSpec` property is a full [JobSpec](https://v1-18.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#jobspec-v1-batch) and can be modified as such. Akri's Helm chart enables modifying the `capacity`, `parallelism`, and `backoffLimit` fields of the JobSpec. Other fields of the JobSpec and the PodSpec within the JobSpec can be specified in a similar manner as described in the [modifying the PodSpec section](#Modifying-the-brokerPodSpec).
+The `brokerJobSpec` property is a full [JobSpec](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.33/#jobspec-v1-batch) and can be modified as such. Akri's Helm chart enables modifying the `capacity`, `parallelism`, and `backoffLimit` fields of the JobSpec. Other fields of the JobSpec and the PodSpec within the JobSpec can be specified in a similar manner as described in the [modifying the PodSpec section](#Modifying-the-brokerPodSpec).
 
 #### Modifying instanceServiceSpec or configurationServiceSpec
 
-The `instanceServiceSpec` and `configurationServiceSpec` properties are full [ServiceSpecs](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#servicespec-v1-core) and can be modified as such. The simplest reason to modify either might be to specify different ports (perhaps 8085 and 8086):
+The `instanceServiceSpec` and `configurationServiceSpec` properties are full [ServiceSpecs](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.33/#servicespec-v1-core) and can be modified as such. The simplest reason to modify either might be to specify different ports (perhaps 8085 and 8086):
 
 ```yaml
 spec:

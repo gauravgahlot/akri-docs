@@ -39,7 +39,7 @@ To grab the latest Akri Helm charts, run `helm repo update`.
 
 ### Setting up your cluster
 
-Before deploying Akri, you must have a Kubernetes cluster (v1.16 or higher) running with `kubectl` and `Helm` installed. Reference our [cluster setup documentation](cluster-setup.md) to set up a cluster or adapt your currently existing cluster. Akri currently supports Linux Nodes on amd64, arm64v8, or arm32v7.
+Before deploying Akri, you must have a Kubernetes cluster (v1.33 or higher) running with `kubectl` and `Helm` installed. Reference our [cluster setup documentation](cluster-setup.md) to set up a cluster or adapt your currently existing cluster. Akri currently supports Linux Nodes on amd64, arm64v8, or arm32v7.
 
 ### Installing Akri Flow
 
